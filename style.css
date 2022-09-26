@@ -1,0 +1,86 @@
+/* https://jsbeginners.com/javascript-projects-for-beginners/ 
+project 12*/
+body {
+    background-color: gray;
+    color: white;
+}
+#form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: goldenrod;
+    align-items: center;
+}
+
+#output-container {
+    background-color: burlywood;
+    min-height: 10rem;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 30px;
+    min-width: 30vw;
+    position: relative;
+    cursor: pointer;
+}
+
+
+button {
+    background-color: cadetblue;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 10rem;
+}
+
+button:hover {
+    background-color: burlywood;
+}
+
+#container-input {
+    display: flex;
+    width: 100%;
+}
+
+#add-item-button {
+    width: 25%;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 75%;
+}
+
+
+ul li.checked::before {
+    content:"";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.list-item {
+    cursor: pointer;
+    width: min-content;
+}
+
+.list-item:hover {
+   color: red;
+   text-decoration: line-through;
+}
+
+.list-item.show {
+    color: red;
+    text-decoration: line-through;
+ }
